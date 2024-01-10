@@ -1,0 +1,78 @@
+\documentclass[a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[a-2u]{pdfx} % PDF-A output
+
+\usepackage[a4paper, top=25mm, bottom=30mm, left=30mm, right=25mm]{geometry}
+\usepackage[czech]{babel}
+\usepackage{csquotes}
+\usepackage{hyperref}
+\hypersetup{unicode}
+\hypersetup{breaklinks=true}
+\usepackage{graphicx}
+\usepackage{cmap}
+\usepackage{enumitem}
+\setlist{noitemsep}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{xcolor}
+
+% Typography
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\usepackage{setspace}
+	\setstretch{1.5} % Better alterative to \baselinestretch
+%\renewcommand{\baselinestretch}{1.5}
+\frenchspacing
+\usepackage{lmodern}
+
+% Citations
+\usepackage{natbib}
+\bibliographystyle{csplainnat}
+\renewcommand{\bibname}{Seznam použité literatury}
+
+% Size of title margins
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+	{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{20pt}{\Huge}
+	\titlespacing*{\chapter}{0pt}{0pt}{40pt}
+
+% Better multiline footnotes
+\usepackage{scrextend}
+\deffootnote[1em]{3em}{1em}{\textsuperscript{\thefootnotemark}}
+\setlength{\footnotesep}{0.5cm}
+\renewcommand{\footnoterule}{\vfill\kern -3pt \hrule width 0.4\columnwidth \kern 2.6pt}
+
+
+\def\Title{Název práce v~čestině}
+\def\TitleEN{Title of the publication in english}
+\def\Author{Autor Práce}
+\def\Study{Studijní program}
+\def\StudyField{Studijní obor}
+\def\Department{Název katedry}
+\def\Supervisor{Vedoucí práce včetně titulů}
+\def\Year{Rok odevzdání}
+\def\Date{Datum odevzdání}
+
+
+\begin{document}
+
+\include{titulka}
+\include{podekovani}
+\include{abstrakt}
+\tableofcontents
+\include{uvod}
+
+\input{chapters/lorem}
+\input{chapters/ipsum}
+
+\include{zaver}
+
+% Citations
+\newpage
+{\raggedright
+	%\nocite{*} % List all entries from bibliography even if not cited in text.
+	\bibliography{bibliografie}
+}
+
+\end{document}
