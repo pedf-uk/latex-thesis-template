@@ -4,7 +4,9 @@
 \usepackage[a-2u]{pdfx} % PDF-A output
 
 \usepackage[a4paper, top=25mm, bottom=30mm, left=30mm, right=25mm]{geometry}
-\usepackage[czech]{babel}
+\usepackage[english,czech]{babel}
+\usepackage[backend=biber,style=iso-authoryear]{biblatex}
+\addbibresource{bibliografie.bib}
 \usepackage{csquotes}
 \usepackage{hyperref}
 \hypersetup{unicode}
@@ -25,11 +27,6 @@
 %\renewcommand{\baselinestretch}{1.5}
 \frenchspacing
 \usepackage{lmodern}
-
-% Citations
-\usepackage{natbib}
-\bibliographystyle{csplainnat}
-\renewcommand{\bibname}{Seznam použité literatury}
 
 % Size of title margins
 \usepackage{titlesec}
@@ -68,11 +65,7 @@
 
 \include{zaver}
 
-% Citations
 \newpage
-{\raggedright
-	%\nocite{*} % List all entries from bibliography even if not cited in text.
-	\bibliography{bibliografie}
-}
+\printbibliography
 
 \end{document}
