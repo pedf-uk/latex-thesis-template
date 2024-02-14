@@ -8,9 +8,11 @@ pdf:
 
 clean:
 	latexmk -c
+	rm pdfa.xmpi prace.bbl prace.run.xml
 
 cleanall:
 	latexmk -C
+	rm pdfa.xmpi prace.bbl prace.run.xml
 
 vlna:
 	vlna -l -r *.tex
