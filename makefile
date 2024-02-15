@@ -1,5 +1,7 @@
 PRACE=prace.tex
 
+.PHONY: all clean cleanall vlna remake
+
 all: vlna pdf
 
 pdf:
@@ -8,14 +10,13 @@ pdf:
 
 clean:
 	latexmk -c
-	rm pdfa.xmpi prace.bbl prace.run.xml
+	rm -f pdfa.xmpi prace.bbl prace.run.xml
 
-cleanall:
+cleanall: clean
 	latexmk -C
-	rm pdfa.xmpi prace.bbl prace.run.xml
 
 vlna:
 	vlna -l -r *.tex
-	vlna -l -r chapters/*.tex
+	vlna -l -r kapitoly/*.tex
 
 remake: cleanall vlna pdf

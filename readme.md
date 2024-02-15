@@ -12,6 +12,7 @@ All make targets:
 | `clean`    | Remove all build files except the output PDF             |
 | `cleanall` | Remove all build files including the output PDF          |
 | `vlna`     | Run `vlna` for adding Czech & Slovak non-breaking spaces |
+| `remake`   | Runs `cleanall`, `vlna` and `pdf` targets                |
 
 The default make targets are `vlna` and `pdf`.
 
