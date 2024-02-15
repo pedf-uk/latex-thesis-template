@@ -40,6 +40,17 @@
 \setlength{\footnotesep}{0.5cm}
 \renewcommand{\footnoterule}{\vfill\kern -3pt \hrule width 0.4\columnwidth \kern 2.6pt}
 
+% Source code
+\usepackage{minted}
+\setminted{
+    frame=lines,
+    framesep=2mm,
+    baselinestretch=1.2,
+    fontsize=\footnotesize,
+    linenos
+}
+\renewcommand{\listingscaption}{Kód}
+\renewcommand\listoflistingscaption{Seznam ukázek zdrojového kódu}
 
 \def\Title{Název práce v~čestině}
 \def\TitleEN{Title of the publication in english}
@@ -67,5 +78,6 @@
 
 \newpage
 \printbibliography
+\listoflistings
 
 \end{document}

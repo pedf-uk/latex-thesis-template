@@ -5,15 +5,14 @@ PRACE=prace.tex
 all: vlna pdf
 
 pdf:
-	latexmk -pdflua $(PRACE)
-	#latexmk -pdf $(PRACE)
+	latexmk -quiet -shell-escape -pdflua $(PRACE)
 
 clean:
-	latexmk -c
-	rm -f pdfa.xmpi prace.bbl prace.run.xml
+	latexmk -quiet -c
+	rm -rf pdfa.xmpi prace.bbl prace.run.xml _minted-prace/
 
 cleanall: clean
-	latexmk -C
+	latexmk -quiet -C
 
 vlna:
 	vlna -l -r *.tex
