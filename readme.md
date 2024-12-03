@@ -28,5 +28,5 @@ The default make targets are `vlna` and `pdf`.
 - [ISO 690 biblatex style](https://mirrors.nic.cz/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-iso690/biblatex-iso690.pdf)
 - [ISO 690 biblatex examples](https://github.com/michal-h21/biblatex-iso690/blob/master/biblatex-iso690-examples.bib)
 
-[regulations]: https://wwwmod.pedf.cuni.cz/udeska/files/opatreni_dekana/opad_k_podrobnostem_zaverecne_prace_2020.pdf
-[template]: https://wwwmod.pedf.cuni.cz/udeska/files/opatreni_dekana/priloha_c_1_bakalarska_prace.docx
+[regulations]: https://wwwmod.pedf.cuni.cz/udeska/files/opatreni_dekana/opad_28_2024_prace_opr.pdf
+[template]: https://wwwmod.pedf.cuni.cz/udeska/files/opatreni_dekana/opad_28_2024_priloha_1_bakalarska_prace.docx
