@@ -2,7 +2,14 @@ This is a simple thesis template for the LaTeX typesetting system. It is configu
 
 ## Requirements & Building
 
-You need a working installation of `texlive` and `latexmk`. Full thesis can be built by running `make`.
+You need a working installation of:
+
+- `texlive`
+- `latexmk`
+- `biber`
+- `make`
+
+Full thesis can be built by running `make`.
 
 All make targets:
 
